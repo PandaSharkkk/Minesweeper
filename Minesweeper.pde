@@ -5,7 +5,7 @@ public final static int NUM_COLS = 20;
 public static int NUM_MINES = 25;
 public static boolean firstClick = true;
 public static boolean gameOver = false;
-public static int num = 0;
+public static int numCounter = 0;
 public static int flagsLeft = 0;
 private MSButton[][] buttons; //2d array of minesweeper buttons
 private ArrayList <MSButton> mines = new ArrayList <MSButton>(); //ArrayList of just the minesweeper buttons that are mined
@@ -23,10 +23,10 @@ void setup ()
   for (int i = 0; i < NUM_ROWS; i ++) {
     for (int k = 0; k < NUM_COLS; k++) {
       buttons[i][k] = new MSButton(i, k);
-      buttons[i][k].myNum = num;
-      num++;
+      buttons[i][k].myNum = numCounter;
+      numCounter++;
     }
-    num++;
+    numCounter++;
   }
 
 
@@ -133,10 +133,10 @@ public class MSButton
         for (int i = 0; i < NUM_ROWS; i ++) {
           for (int k = 0; k < NUM_COLS; k++) {
             buttons[i][k] = new MSButton(i, k);
-            buttons[i][k].myNum = num;
-            num++;
+            buttons[i][k].myNum = numCounter;
+            numCounter++;
           }
-          num++;
+          numCounter++;
         }
         mines = new ArrayList <MSButton>();
         setMines();
