@@ -2,7 +2,7 @@ import de.bezier.guido.*;
 //Declare and initialize constants NUM_ROWS and NUM_COLS = 20
 public final static int NUM_ROWS = 20;
 public final static int NUM_COLS = 20;
-public static int NUM_MINES = 25;
+public static int NUM_MINES = 50;
 public static boolean firstClick = true;
 public static boolean gameOver = false;
 public static int numCounter = 0;
