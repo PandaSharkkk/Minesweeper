@@ -48,7 +48,6 @@ public void setMines()
 
 public void draw ()
 {
-  System.out.println(flagsLeft);
   background( 0 );
   textSize(15);
   fill(255);
@@ -73,7 +72,6 @@ public boolean isWon()
 }
 public void displayLosingMessage()
 {
-  System.out.println("YOU LOST");
   gameOver = true;
   for (int i = 0; i < mines.size(); i++) {
     mines.get(i).clicked = true;
@@ -82,7 +80,6 @@ public void displayLosingMessage()
 public void displayWinningMessage()
 {
   //your code here
-  System.out.println("YOU WON");
 }
 public boolean isValid(int r, int c)
 {
